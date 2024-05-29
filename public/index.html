@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MONDIGI</title>
+        <link rel="stylesheet" href="./styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+    <body>
+        <section id="seleccionar-mascota">
+            <h1 class="titulo">MONDiGi ! </h1>
+          
+            <h2 class="subtitulo">Elige a tu Mascota:</h2>
+            <div id="contenedorTarjetas" class="tarjetas">
+        
+                
+            </div>
+            
+            <button id="btn-mascotas">Seleccionar</button>
+        </section>
+
+        <section id="ver-mapa">
+            <h2 class="subtitulo">RECORRE EL  MAPA CON TU MONDIGI      </h2>
+            <canvas id="mapa"></canvas>
+            <button onmouseup = "detenerMovimiento()" onmousedown="moverArriba()">Arriba </button>
+            <div>
+                <button onmouseup = "detenerMovimiento()" onmousedown="moverIzquierda()">Izquierda</button>
+                <button onmouseup = "detenerMovimiento()" onmousedown="moverDerecha()">Derecha</button>
+            </div>
+            <div>
+                <button onmouseup = "detenerMovimiento()" onmousedown="moverAbajo()">Abajo</button>
+            </div>
+
+
+        </section>
+
+        <section id="seleccionar-ataque">
+
+            <h1 class="titulo">MONDIGI !!! </h1>
+            <h2 class="subtitulo">Elige a tu Ataque:</h2>
+            
+            <div id="contenedorAtaques" class="tarjetas-ataques">
+                
+                
+            </div>           
+
+            <div id="mensajes">
+                <p id="resultado">Mucha Suerte</p>
+
+                <section id="reiniciar">
+                     <button id="btn-reiniciar">Reiniciar</button>
+                </section>
+            </div>        
+            
+            <div class="ataques">
+                <div class="ataques-jugador">
+                    <p id="vida-jugador">0</p>
+                    <p id="mascota-jugador"></p>
+                    <div id="ataque-jugador"></div>
+                </div>
+                <div class="ataques-enemigo">
+                    <p id="vida-enemigo">0</p>
+                    <p id="mascota-enemigo"></p>
+                    <div id="ataque-enemigo"></div>
+                </div>
+            </div>      
+        </section>
+        <script src="./mondigi.js"></script>
+    </body>
+
+</html>

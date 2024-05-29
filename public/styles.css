@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Honk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Honk&family=Jersey+15+Charted&display=swap');
+
+
+body{
+    background: linear-gradient(to right, #ff5733, #ffc300, #101111);
+
+}
+#seleccionar-mascota{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    background: linear-gradient(to right, #ff5733, #ffc300, #101111);
+    
+    
+
+}
+
+.titulo {
+    
+    text-align: center;
+    font-size: 300%;
+    font-family: "Honk", system-ui;
+    margin: -7px;
+    
+
+
+}
+
+.subtitulo{
+    color: rgba(214, 77, 14, 0.836);
+    font-family: "Honk", system-ui;
+    font-size: 50px;
+    margin: 0.5em 0; /* Ajustar márgenes */
+}
+
+.tarjetas{
+    display: flex;
+    box-sizing: border-box;
+    border: 7px solid;
+    border-style: ridge;
+    border-color: rgb(255, 196, 0);
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    
+
+}
+.tarjeta{
+    width: 150px;
+    height: 100px;
+    background-color: rgba(63, 47, 47, 0.726);
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 1px solid rgb(13, 2, 15);
+    border-radius: 13px;
+    display: flex;
+    color: wheat;
+    
+    
+}
+
+.tarjeta img {
+    width: 80px;
+}
+
+#btn-mascotas{
+    width: auto;
+    height: 40px;
+    border-radius: 33px;
+    background: #e9411d;
+    border: 1px solid #030303;
+    font-family: "Jersey 15 Charted", sans-serif;
+    font-size: 30px;
+}
+
+input{
+    display: none;
+}
+
+input:checked + label{
+    background-color: #e9411d;
+}
+
+
+#seleccionar-ataque{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btnataque{
+    background-color: blue;
+}
+
+#btn-fuego{
+    width: auto;
+    height: 40px;
+    border-radius: 33px;
+    background: #e9411d;
+    border: 1px solid #030303;
+    font-family: "Jersey 15 Charted", sans-serif;
+    font-size: 19px;
+    padding: 3px 20px
+}
+
+#btn-agua{
+    width: auto;
+    height: 40px;
+    border-radius: 33px;
+    border-style: inset;
+    background: #1da8e9;
+    border: 1px solid #020202;
+    font-family: "Jersey 15 Charted", sans-serif;
+    font-size: 19px;
+    padding: 3px 20px;
+}
+
+#btn-piedra{
+    width: auto;
+    height: 40px;
+    border-radius: 33px;
+    border: 1px solid;
+    border-style: inset;
+    background: #ac9c9c;
+    border: 1px solid #050505;
+    font-family: "Jersey 15 Charted", sans-serif;
+    font-size: 19px;
+    padding: 5px 20px
+}
+
+#mensajes{
+    margin: 20px;
+    background: rgba(240, 236, 4, 0.712);
+    padding: 20px;
+    border: 1px solid;
+    border-style: inset;
+    border-radius: 40%;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    font-family: "Honk", system-ui;
+    flex-direction: column;
+    font-size: 30px;
+    text-align: center;
+}
+
+#btn-reiniciar{
+    border: transparent;
+    color: rgb(7, 7, 7);
+    font-family: "Honk", system-ui;
+    font-size: 20px;
+    background-color: transparent;
+}
+
+.ataques{
+    display: grid;
+    grid-template-columns: 100px 100px;
+    text-align: center;
+}
+
+.tarjetas-ataques{
+    display: flex;
+    gap: 10px;
+}
+
+.ataques-jugador{
+    border: 1px solid;
+    border-style: groove;
+    border-color: #f0dd0d;
+    border-radius: 20%;
+}
+.ataques-enemigo{
+    border: 1px solid;
+    border-style: groove;
+    border-color: #ada548;
+    border-radius: 20%;
+}
+
+#ver-mapa{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#ver-mapa button{
+    width: 100px;
+    height: 40px;
+    border-radius: 33px;
+    background: #e9411d;
+    border: 1px solid #030303;
+    font-family: "Jersey 15 Charted", sans-serif;
+    font-size: 24px;
+    margin: 4px
+}
+
+
+
+#mapa{
+    border: 2px solid black;
+    margin-top: 30px;
+    margin-bottom: 19px;
+}
+
+@media (max-width: 560px){
+    .tarjetas{
+        flex-direction: column;
+    }
+
+    .tarjetas-ataques{
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 360px) {
+
+    #ver-mapa div{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
